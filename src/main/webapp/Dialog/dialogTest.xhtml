@@ -1,0 +1,30 @@
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	style="height: 100%; background: linear-gradient(180deg, rgba(var(--background-start), 1) 0%, rgba(var(--background-end), 1) 100%);">
+	
+
+<ui:composition>
+<head></head>
+	<p:dialog>
+		<h:form id="test_id">
+		
+		<p:commandButton disabled="#{Testingclass.home}"> </p:commandButton>
+				<p:remoteCommand name="refreshPage" update="@form"/>
+				<p:remoteCommand global="false" name="refreshDialog" actionListener="#{Testingclass.refreshDialog()}"/>
+				
+
+		
+		</h:form>
+	
+	
+	
+	
+	</p:dialog>
+</ui:composition>
+
+
+</html>
